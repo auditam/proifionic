@@ -22,12 +22,16 @@
 
 
 <ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-
+    <ion-card *ngFor="let item of items">
     <img src="{{item.img}}">
-    <h1>{{item.title}}</h1>
-    <h2>{{item.summary}}</h2>
-    </ion-item>
-  </ion-list>
+    <ion-card-content>
+      <ion-card-title>
+        {{item.title}}
+      </ion-card-title>
+      <p>
+        {{item.summary}}
+      </p>
+      <a href="{{item.url}}">read more</a>
+    </ion-card-content>
+    </ion-card>
 </ion-content>

@@ -16,13 +16,15 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-    <ion-thumbnail>
+  
+    <ion-card *ngFor="let item of items">
     <img src="{{item.img}}">
-    </ion-thumbnail>
-    <h1>{{item.name}}</h1>
-    <h2>{{item.location_training}}</h2>
-    </ion-item>
-  </ion-list>
+    <h1>
+      {{item.name}}
+    </h1>
+    <p>
+      {{item.location_training}}
+    </p>
+    </ion-card>
+  
 </ion-content>

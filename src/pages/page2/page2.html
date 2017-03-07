@@ -16,11 +16,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-
-    <img src="{{item.img}}">
-   
-    </ion-item>
-  </ion-list>
+    <ion-card *ngFor="let item of items">
+    <a href="{{item.url}}"><img src="{{item.img}}"></a>
+    </ion-card>
 </ion-content>

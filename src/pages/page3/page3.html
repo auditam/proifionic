@@ -16,11 +16,8 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <ion-item *ngFor = "let item of items">
-      <ion-thumbnail *ngIf="item.status">
-        <img src="{{item.img}}">
-      </ion-thumbnail>
-    </ion-item>
-  </ion-list>
+  <button (click)="takePhoto()">
+    <ion-icon name="camera"> Take a Photo </ion-icon>
+  </button>
+  <img src = "{{ base64Image }}"/>
 </ion-content>

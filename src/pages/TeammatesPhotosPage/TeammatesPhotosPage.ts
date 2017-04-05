@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Http } from '@angular/http';
 import { NavController } from 'ionic-angular';
 import {News} from '../../providers/News';
 import {Camera} from 'ionic-native';

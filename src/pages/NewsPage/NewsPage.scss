@@ -1,13 +1,5 @@
 page-NewsPage {
 	
-#sidebar {
-  width: 30%;
-  background-color: #faa;
-}
-  body {
-  margin: 0;
-}
-
 .wrapper {
   position: center;
   color: white;
@@ -15,7 +7,7 @@ page-NewsPage {
 
 .wrapper ion-title {
   color: white;
-  background: url(../../assets/images/news.png) no-repeat center;
+  background: url(../assets/images/news.png) no-repeat center;
   bottom: 0%;
   font-size: 1.25em;
   left: 0;
@@ -23,6 +15,6 @@ page-NewsPage {
   position: center;
 }
 .wrapperheader ion-title{
-	background: url(../../assets/images/header.png) no-repeat center;
+	background: url(../assets/images/header.png) no-repeat center;
 }
 }

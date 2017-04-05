@@ -1,7 +1,4 @@
 page-ClubsPage {
-  body {
-  margin: 0;
-}
 
 .wrapper {
   position: center;
@@ -10,7 +7,7 @@ page-ClubsPage {
 
 .wrapper ion-title {
   color: white;
-  background: url(../../assets/images/hclubs.png) no-repeat center;
+  background: url(../assets/images/hclubs.png) no-repeat center;
   bottom: 0%;
   font-size: 1.25em;
   left: 0;
@@ -18,6 +15,6 @@ page-ClubsPage {
   position: center;
 }
 .wrapperheader ion-title{
-	background: url(../../assets/images/header.png) no-repeat center;
+	background: url(../assets/images/header.png) no-repeat center;
 }
 }

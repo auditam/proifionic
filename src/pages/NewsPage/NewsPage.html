@@ -1,0 +1,35 @@
+<ion-header>
+<div class=wrapperheader>
+  <ion-navbar color="danger">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img src='../../assets/images/logo-header.png'></ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  </div>
+  <ion-toolbar>
+  <div class="wrapper">
+    <ion-title><font color="white">Latest News</font></ion-title>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngFor="let item of items">
+    <img src="{{item.img}}">
+    <ion-card-content>
+      <ion-card-title>
+        {{item.title}}
+      </ion-card-title>
+      <p>
+        {{item.summary}}
+      </p>
+      <a href="{{item.url}}">read more</a>
+    </ion-card-content>
+    </ion-card>
+</ion-content>

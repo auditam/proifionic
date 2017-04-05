@@ -1,0 +1,27 @@
+<ion-header>
+<div class=wrapperheader>
+  <ion-navbar color="danger">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Persatuan Rugby Indonesia</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  </div>
+  <ion-toolbar>
+  <div class="wrapper">
+    <ion-title><font color="white">Teammates Photos</font></ion-title>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <button (click)="takePhoto()">
+    <ion-icon name="camera"> Take a Photo </ion-icon>
+  </button>
+  <img src = "{{ base64Image }}"/>
+</ion-content>

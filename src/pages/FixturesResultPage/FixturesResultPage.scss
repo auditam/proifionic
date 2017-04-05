@@ -1,0 +1,23 @@
+page-FixturesResultPage {
+	  body {
+  margin: 0;
+}
+
+.wrapper {
+  position: center;
+  color: white;
+}
+
+.wrapper ion-title {
+  color: white;
+  background: url(../../assets/images/hfixture.png) no-repeat center;
+  bottom: 0%;
+  font-size: 1.25em;
+  left: 0;
+  padding: 0.25em 0.75em;
+  position: center;
+}
+.wrapperheader ion-title{
+	background: url(../../assets/images/header.png) no-repeat center;
+}
+}

@@ -24396,3 +24396,127 @@ ion-title {
   height: 100%;
   text-align: center;
 }
+
+ion-content {
+  background-color: red;
+}
+
+page-ClubsPage body {
+  margin: 0;
+}
+
+page-ClubsPage .wrapper {
+  position: center;
+  color: white;
+}
+
+page-ClubsPage .wrapper ion-title {
+  color: white;
+  background: url(../../assets/images/hclubs.png) no-repeat center;
+  bottom: 0%;
+  font-size: 1.25em;
+  left: 0;
+  padding: 0.25em 0.75em;
+  position: center;
+}
+
+page-ClubsPage .wrapperheader ion-title {
+  background: url(../../assets/images/header.png) no-repeat center;
+}
+
+page-FixturesResultPage body {
+  margin: 0;
+}
+
+page-FixturesResultPage .wrapper {
+  position: center;
+  color: white;
+}
+
+page-FixturesResultPage .wrapper ion-title {
+  color: white;
+  background: url(../../assets/images/hfixture.png) no-repeat center;
+  bottom: 0%;
+  font-size: 1.25em;
+  left: 0;
+  padding: 0.25em 0.75em;
+  position: center;
+}
+
+page-FixturesResultPage .wrapperheader ion-title {
+  background: url(../../assets/images/header.png) no-repeat center;
+}
+
+page-NewsPage #sidebar {
+  width: 30%;
+  background-color: #faa;
+}
+
+page-NewsPage body {
+  margin: 0;
+}
+
+page-NewsPage .wrapper {
+  position: center;
+  color: white;
+}
+
+page-NewsPage .wrapper ion-title {
+  color: white;
+  background: url(../../assets/images/news.png) no-repeat center;
+  bottom: 0%;
+  font-size: 1.25em;
+  left: 0;
+  padding: 0.25em 0.75em;
+  position: center;
+}
+
+page-NewsPage .wrapperheader ion-title {
+  background: url(../../assets/images/header.png) no-repeat center;
+}
+
+page-Rugby101Page body {
+  margin: 0;
+}
+
+page-Rugby101Page .wrapper {
+  position: center;
+  color: white;
+}
+
+page-Rugby101Page .wrapper ion-title {
+  color: white;
+  background: url(../../assets/images/101.png) no-repeat center;
+  bottom: 0%;
+  font-size: 1.25em;
+  left: 0;
+  padding: 0.25em 0.75em;
+  position: center;
+}
+
+page-Rugby101Page .wrapperheader ion-title {
+  background: url(../../assets/images/header.png) no-repeat center;
+}
+
+page-TeammatesPhotosPage body {
+  margin: 0;
+}
+
+page-TeammatesPhotosPage .wrapper {
+  position: center;
+  color: white;
+}
+
+page-TeammatesPhotosPage .wrapper ion-title {
+  color: white;
+  background: url(../../assets/images/hphoto.png) no-repeat center;
+  bottom: 0%;
+  font-size: 1.25em;
+  left: 0;
+  padding: 0.25em 0.75em;
+  position: center;
+}
+
+page-TeammatesPhotosPage .wrapperheader ion-title {
+  background: url(../../assets/images/header.png) no-repeat center;
+}

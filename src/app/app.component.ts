@@ -2,11 +2,11 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import {News} from '../providers/News';
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
-import { Page3 } from '../pages/page3/page3';
-import { Page4 } from '../pages/page4/page4';
-import { Page5 } from '../pages/page5/page5';
+import { NewsPage } from '../pages/NewsPage/NewsPage';
+import { FixturesResultPage } from '../pages/FixturesResultPage/FixturesResultPage';
+import { TeammatesPhotosPage } from '../pages/TeammatesPhotosPage/TeammatesPhotosPage';
+import { Rugby101Page } from '../pages/Rugby101Page/Rugby101Page';
+import { ClubsPage } from '../pages/ClubsPage/ClubsPage';
 
 
 @Component({
@@ -16,7 +16,7 @@ import { Page5 } from '../pages/page5/page5';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  rootPage: any = NewsPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -25,11 +25,11 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'News', component: Page1 },
-      { title: 'Fixtures & Result', component: Page2 },
-      { title: 'Teammate Photos', component: Page3 },
-      { title: 'Rugby 101', component: Page4 },
-      { title: 'Rugby Clubs', component: Page5 }
+      { title: 'News', component: NewsPage },
+      { title: 'Fixtures & Result', component: FixturesResultPage },
+      { title: 'Teammate Photos', component: TeammatesPhotosPage },
+      { title: 'Rugby 101', component: Rugby101Page },
+      { title: 'Rugby Clubs', component: ClubsPage }
     ];
 
   }

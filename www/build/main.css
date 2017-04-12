@@ -24401,6 +24401,21 @@ ion-content {
   background-color: red;
 }
 
+.par {
+  background-color: red;
+  color: white;
+  top: 0;
+  left: 0;
+  padding: 15px 15px 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.but button {
+  background-color: red;
+  color: white;
+}
+
 page-ClubsPage .wrapper {
   position: center;
   color: white;
@@ -24408,16 +24423,30 @@ page-ClubsPage .wrapper {
 
 page-ClubsPage .wrapper ion-title {
   color: white;
-  background: url(../assets/images/hclubs.png) no-repeat center;
+  background: url(../assets/images/hclubs.png) repeat center;
   bottom: 0%;
-  font-size: 1.25em;
+  font-size: 0px;
   left: 0;
-  padding: 0.25em 0.75em;
+  padding: 0px 0px;
   position: center;
 }
 
 page-ClubsPage .wrapperheader ion-title {
-  background: url(../assets/images/header.png) no-repeat center;
+  background: url(../assets/images/header.png) repeat center;
+}
+
+page-ClubsPage ion-navbar {
+  height: 100px;
+}
+
+page-ClubsPage ion-toolbar {
+  height: 150px;
+}
+
+page-ClubsPage .image img {
+  height: 100px;
+  width: 100px;
+  position: left;
 }
 
 page-FixturesResultPage .wrapper {
@@ -24427,16 +24456,24 @@ page-FixturesResultPage .wrapper {
 
 page-FixturesResultPage .wrapper ion-title {
   color: white;
-  background: url(../assets/images/hfixture.png) no-repeat center;
+  background: url(../assets/images/hfixture.png) repeat center;
   bottom: 0%;
-  font-size: 1.25em;
+  font-size: 0px;
   left: 0;
-  padding: 0.25em 0.75em;
+  padding: 0px 0px;
   position: center;
 }
 
 page-FixturesResultPage .wrapperheader ion-title {
-  background: url(../assets/images/header.png) no-repeat center;
+  background: url(../assets/images/header.png) repeat center;
+}
+
+page-FixturesResultPage ion-navbar {
+  height: 100px;
+}
+
+page-FixturesResultPage ion-toolbar {
+  height: 150px;
 }
 
 page-NewsPage .wrapper {
@@ -24446,16 +24483,24 @@ page-NewsPage .wrapper {
 
 page-NewsPage .wrapper ion-title {
   color: white;
-  background: url(../assets/images/news.png) no-repeat center;
+  background: url(../assets/images/news.png) repeat center;
   bottom: 0%;
-  font-size: 1.25em;
+  font-size: 0px;
   left: 0;
-  padding: 0.25em 0.75em;
+  padding: 0px 0px;
   position: center;
 }
 
 page-NewsPage .wrapperheader ion-title {
-  background: url(../assets/images/header.png) no-repeat center;
+  background: url(../assets/images/header.png) repeat center;
+}
+
+page-NewsPage ion-navbar {
+  height: 100px;
+}
+
+page-NewsPage ion-toolbar {
+  height: 150px;
 }
 
 page-Rugby101Page .wrapper {
@@ -24465,16 +24510,24 @@ page-Rugby101Page .wrapper {
 
 page-Rugby101Page .wrapper ion-title {
   color: white;
-  background: url(../assets/images/101.png) no-repeat center;
+  background: url(../assets/images/101.png) repeat center;
   bottom: 0%;
-  font-size: 1.25em;
+  font-size: 0px;
   left: 0;
-  padding: 0.25em 0.75em;
+  padding: 0px 0px;
   position: center;
 }
 
 page-Rugby101Page .wrapperheader ion-title {
-  background: url(../assets/images/header.png) no-repeat center;
+  background: url(../assets/images/header.png) repeat center;
+}
+
+page-Rugby101Page ion-navbar {
+  height: 100px;
+}
+
+page-Rugby101Page ion-toolbar {
+  height: 150px;
 }
 
 page-TeammatesPhotosPage .wrapper {
@@ -24484,14 +24537,22 @@ page-TeammatesPhotosPage .wrapper {
 
 page-TeammatesPhotosPage .wrapper ion-title {
   color: white;
-  background: url(../assets/images/hphoto.png) no-repeat center;
+  background: url(../assets/images/hphoto.png) repeat center;
   bottom: 0%;
-  font-size: 1.25em;
+  font-size: 0px;
   left: 0;
-  padding: 0.25em 0.75em;
+  padding: 0px 0px;
   position: center;
 }
 
 page-TeammatesPhotosPage .wrapperheader ion-title {
-  background: url(../assets/images/header.png) no-repeat center;
+  background: url(../assets/images/header.png) repeat center;
+}
+
+page-TeammatesPhotosPage ion-navbar {
+  height: 100px;
+}
+
+page-TeammatesPhotosPage ion-toolbar {
+  height: 150px;
 }

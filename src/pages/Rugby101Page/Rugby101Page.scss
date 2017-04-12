@@ -7,14 +7,20 @@ page-Rugby101Page {
 
 .wrapper ion-title {
   color: white;
-  background: url(../assets/images/101.png) no-repeat center;
+  background: url(../assets/images/101.png) repeat center;
   bottom: 0%;
-  font-size: 1.25em;
+  font-size: 0px;
   left: 0;
-  padding: 0.25em 0.75em;
+  padding: 0px 0px;
   position: center;
 }
 .wrapperheader ion-title{
-	background: url(../assets/images/header.png) no-repeat center;
+	background: url(../assets/images/header.png) repeat center;
+}
+ion-navbar{
+  height:100px;
+}
+ion-toolbar{
+  height:150px;
 }
 }

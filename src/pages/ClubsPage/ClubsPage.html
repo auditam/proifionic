@@ -18,19 +18,23 @@
   </div>
   <ion-toolbar>
   <div class="wrapper">
-    <ion-title><font color="white">Rugby Clubs</font></ion-title>
+    <ion-title><font color="white" size=10>Rugby Clubs</font></ion-title>
   </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
       <ion-card *ngFor="let item of items">
+      <div class="image">
+      <ion-thumbnail>
     <img src="{{item.img}}">
+    </ion-thumbnail>
+        </div>
     <h1>
       {{item.name}}
     </h1>
     <p>
       {{item.location_training}}
     </p>
-    </ion-card>
+      </ion-card>
   </ion-content>

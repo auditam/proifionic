@@ -1,18 +1,59 @@
 <ion-menu [content]="content" side="right">
-  <ion-header >
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
+  <div class="hed">
+  <ion-header color="danger">
+    
   </ion-header>
+  </div>
 
-  <ion-content color ="danger">
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+  <ion-content>
+    <ion-list color="danger">
+    <div class="but">
+      <button color="danger" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
+      </div>
+      <div class="par">
+      Contact:
+      <br>
+      <br>info@rugbyindonesia.or.id
+      <br>www.rugbyindonesia.or.id
+      <br>
+      <br>Connect with us:
+      <br>
+      <br>
+  <img src="assets/images/twitter.png" height="50px">
+  <img src="assets/images/facebook.png" height="50px">
+  <img src="assets/images/vine.png" height="50px">
+  <br>
+  <br>
+  <img src="assets/images/gplus.png" height="50px">
+  <img src="assets/images/youtube.png" height="50px">
+  <img src="assets/images/instagram.png" height="50px">
+  <br>
+  <br>
+  Affiliations
+  <br>
+  <br>
+  <img src="assets/images/affiliate-worldrugby.png" height="50px">
+  <img src="assets/images/affiliate-arfu.png" height="50px">
+  <br>
+  <br>
+  <img src="assets/images/affiliate-koni.png" height="50px">
+  <img src="assets/images/affiliate-nocindonesia.png" height="50px">
+  <br>
+  <br>
+  © 2016 Persatuan Rugby Union Indonesia
+  <br>
+  <br>
+  Powered By Lorem Ipsum
+  <img src="assets/images/sponsor.png" height="50px">
+  <br>
+  <br>
+  Developed By
+  DNArtworks.co.id
+  </div>
     </ion-list>
   </ion-content>
-
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->

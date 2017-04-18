@@ -1,6 +1,7 @@
 <ion-header>
 <div class=wrapperheader>
   <ion-navbar color="danger">
+  
   <ion-buttons right>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -15,17 +16,19 @@
         </button>
       </ion-buttons>
     </ion-buttons>
+  
   </ion-navbar>
-  </div>
+</div>
+  
   <ion-toolbar>
   <div class="wrapper">
-    <ion-title><font color="white" size=10>Teammates Photos</font></ion-title>
+    <ion-title><font color="white" size=10>TEAMMATE PHOTOS</font></ion-title>
   </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <button (click)="takePhoto()">
+  <button ion-button block ion-button color="Danger" (click)="takePhoto()">
     <ion-icon name="camera"> Take a Photo </ion-icon>
   </button>
   <img src = "{{ base64Image }}"/>

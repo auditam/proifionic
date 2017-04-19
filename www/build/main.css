@@ -24440,7 +24440,7 @@ page-ClubsPage ion-navbar {
 }
 
 page-ClubsPage ion-toolbar {
-  height: 150px;
+  height: 100px;
 }
 
 page-ClubsPage .image img {
@@ -24473,7 +24473,7 @@ page-FixturesResultPage ion-navbar {
 }
 
 page-FixturesResultPage ion-toolbar {
-  height: 150px;
+  height: 100px;
 }
 
 page-NewsPage .wrapper {
@@ -24500,7 +24500,7 @@ page-NewsPage ion-navbar {
 }
 
 page-NewsPage ion-toolbar {
-  height: 150px;
+  height: 100px;
 }
 
 page-Rugby101Page .wrapper {
@@ -24527,7 +24527,7 @@ page-Rugby101Page ion-navbar {
 }
 
 page-Rugby101Page ion-toolbar {
-  height: 150px;
+  height: 100px;
 }
 
 page-TeammatesPhotosPage .wrapper {

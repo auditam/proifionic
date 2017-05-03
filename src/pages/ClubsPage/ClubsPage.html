@@ -27,18 +27,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-      <ion-card *ngFor="let item of items">
-      <div class="image">
-      <ion-thumbnail>
-    <img src="{{item.img}}">
-    </ion-thumbnail>
-        </div>
-    <h1>
-      {{item.name}}
-    </h1>
-    <p>
-      {{item.location_training}}
-    </p>
-      </ion-card>
-  </ion-content>
+<ion-content>
+  <ion-row *ngFor="let item of items" padding>
+    <ion-col>
+      <img src="{{item.img}}">
+    </ion-col>
+    <ion-col>
+      <h1>{{item.name}}</h1>
+      <p>{{item.location_training}}</p>
+      <p>{{item.contacts[0].value}}</p>
+    </ion-col>
+  </ion-row>
+</ion-content>

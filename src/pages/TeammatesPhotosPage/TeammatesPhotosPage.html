@@ -31,9 +31,16 @@
   <button ion-button color="danger" round block (click)="takePhoto()">
     <ion-icon name="camera"> Take a Photo </ion-icon>
   </button>
-  <img src = "{{ base64Image }}"/>
-  
+
   <button (click) = "gallery()" ion-button round block color="danger">
     <ion-icon name="gallery"> Load From Gallery </ion-icon>
   </button>
+
+  <ion-grid>
+    <ion-row wrap>
+      <ion-col width-50 *ngFor="let item of items?.data">
+        <img src = "item"/>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

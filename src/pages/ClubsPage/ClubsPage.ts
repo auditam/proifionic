@@ -22,5 +22,5 @@ export class ClubsPage {
   getclubPosts(){
   	this.news.getclubPosts().subscribe(response =>{this.items=response
   });
-}
+  }
 }

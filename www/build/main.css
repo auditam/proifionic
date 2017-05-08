@@ -24416,6 +24416,29 @@ ion-content {
   color: white;
 }
 
+.wrapper {
+  position: center;
+  color: white;
+}
+
+.wrapperheader ion-title {
+  background: url(../assets/images/header.png) repeat center;
+}
+
+ion-navbar {
+  height: 100px;
+}
+
+ion-toolbar {
+  height: 100px;
+}
+
+.image img {
+  height: 100px;
+  width: 100px;
+  position: left;
+}
+
 page-ClubsPage .wrapper {
   position: center;
   color: white;

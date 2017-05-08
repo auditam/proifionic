@@ -1,7 +1,6 @@
 <ion-menu [content]="content" side="right">
   <div class="hed">
   <ion-header color="danger">
-    
   </ion-header>
   </div>
 
@@ -82,3 +81,25 @@
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+
+<ion-header>
+<div class=wrapperheader>
+  <ion-navbar color="danger">
+    
+    <ion-buttons right>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title><img src="assets/images/logo-header.png"></ion-title>
+    
+    <ion-buttons start left>
+            <button ion-button icon-only color="royal" left (click)="backhome()">
+              <ion-icon name="home"></ion-icon>
+            </button>
+    </ion-buttons>
+  
+  </ion-navbar>
+</div>
+</ion-header>

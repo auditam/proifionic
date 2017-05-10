@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import {News} from '../../providers/News';
-import {Camera} from 'ionic-native';
+import { NavController, ToastController, AlertController, LoadingController, Nav } from 'ionic-angular';
+import { News } from '../../providers/News';
+import { Camera, File} from 'ionic-native';
+import { Http } from '@angular/http';
+import { PhotoEditor } from '../PhotoEditor/PhotoEditor';
+
+declare var cordova: any;
 
 @Component({
   selector: 'page-TeammatesPhotosPage',
@@ -10,27 +14,63 @@ import {Camera} from 'ionic-native';
 
 export class TeammatesPhotosPage {
 	
-  imageURL
+  public base64Image: string;
+
+  lastImage: string = null;
 	items: any;
-	loading: any;
-	posts: any;
+	path:string = null;
+  navi: any;
 
-  constructor(public navCtrl: NavController, private news:News) {
-
-  }
-  ngOnInit(){
-  this.getphotoPosts();
-  }
-  getphotoPosts(){
-  	this.news.getphotoPosts().subscribe(response =>{this.items=response;
-    });
+  constructor(public navCtrl: NavController,
+  public alertCtrl: AlertController,
+  public http: Http,
+  public toastCtrl: ToastController,
+  public loadingController: LoadingController,
+  public nav: Nav) {
+    this.navi = nav;
+    this.http.get('https://ri-admin.azurewebsites.net/indonesianrugby/photos/list.json')
+    .subscribe(res => this.items = res.json());
+    console.log(this.items);
   }
 
   takePhoto(){
-    Camera.getPicture().then((imageData) =>
-    {let base64Image = 'data:image/jpeg;base64,' + imageData;
-    },(err)=>{
+    console.log(cordova.file);
+
+    var options = {
+      quality:50,
+      destinationType: Camera.DestinationType.DATA_URL,
+      sourceType: Camera.PictureSourceType.CAMERA,
+      encodingType: Camera.EncodingType.JPEG,
+      targetWidth: 400,
+      targetHeight: 400,
+      saveToPhotoAlbum: true,
+      correctOrientation: true
+    };
+
+    Camera.getPicture(options).then((imageData) => {
+      this.base64Image = 'data:image/jpeg;base64,' + imageData;
+      this.lastImage = this.base64Image;
+      this.navCtrl.push(PhotoEditor, {base64: this.lastImage});
+    },(err) => {
       console.log(err);
-    })
+    });
+  }
+
+  gallery(){
+    var options = {
+      quality: 50,
+      destinationType: Camera.DestinationType.DATA_URL,
+      sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+      targetWidth: 400,
+      targetHeight: 400
+    };
+
+    Camera.getPicture(options).then((imageData) => {
+      this.base64Image = 'data:image/png;base64,' + imageData;
+      this.lastImage = this.base64Image;
+      this.navCtrl.push(PhotoEditor, {base64:this.lastImage});
+    }, (err) => {
+      console.log(err);
+    });
   }
 }

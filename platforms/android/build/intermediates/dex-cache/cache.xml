@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Fransiscus Evan\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="I:\Proyek Informatika\proifionic\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-24.1.1_bd9df6f5cdcd3bce6daf31fea791babdac626dc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="I:\Proyek Informatika\proifionic\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e29e17feb5c194b0eee3cc76938b82472faee51">
+        <dex dex="I:\Proyek Informatika\proifionic\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_9b0cbe11570657c5385b8e4bcc78a7ad9ff1f5fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="I:\Proyek Informatika\proifionic\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="I:\Proyek Informatika\proifionic\platforms\android\build\intermediates\pre-dexed\debug\internal_impl-24.1.1_8579d3773999308429c59f95c12080d0d6dcf819.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="I:\Proyek Informatika\proifionic\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="I:\Proyek Informatika\proifionic\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.1.1_6eea3ef3ad50a8df539dec7a94eec0b1c32660d3.jar" />
+    </item>
+
+</items>

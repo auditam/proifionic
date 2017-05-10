@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-import {News} from '../providers/News';
+import { News } from '../providers/News';
 import { NewsPage } from '../pages/NewsPage/NewsPage';
 import { FixturesResultPage } from '../pages/FixturesResultPage/FixturesResultPage';
 import { TeammatesPhotosPage } from '../pages/TeammatesPhotosPage/TeammatesPhotosPage';
